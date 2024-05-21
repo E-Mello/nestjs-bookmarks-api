@@ -1,0 +1,17 @@
+# O erro que você está vendo (Delete ␍eslintprettier/prettier) está relacionado às diferenças de final de linha (end-of-line)
+# entre sistemas operacionais. Isso ocorre porque o Prettier está configurado para usar lf (line feed) como o final de linha,
+# mas seu editor ou sistema operacional pode estar usando crlf (carriage return + line feed).
+
+# por isso criei esse arquivo .editorconfig com essas configurações, para o erro de quebra de linha acima
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
